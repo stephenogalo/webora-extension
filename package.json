@@ -1,0 +1,12 @@
+{
+  "name": "webora-extension",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A lightweight browser extension that analyzes websites locally to identify potential phishing attempts, deceptive domains, and other suspicious browsing signals.",
+  "scripts": {
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

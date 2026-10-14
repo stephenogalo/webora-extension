@@ -1,0 +1,55 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Webora — Web Protection</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main class="app">
+    <header class="header">
+      <div class="brand-mark" aria-hidden="true">W</div>
+      <div>
+        <h1>Webora</h1>
+        <p class="tagline">Browse freely. Stay protected.</p>
+      </div>
+    </header>
+
+    <section id="status" class="status" aria-live="polite">
+      <p class="eyebrow">WEBSITE SECURITY CHECK</p>
+      <h2 id="level">Checking website…</h2>
+      <p id="host" class="host">Waiting for page information</p>
+
+      <div class="score-row">
+        <span>Risk score</span>
+        <strong id="score">—/100</strong>
+      </div>
+
+      <div class="meter" role="progressbar"
+        aria-label="Website risk score"
+        aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"
+        id="meter">
+        <div id="meter-fill" class="meter-fill"></div>
+      </div>
+    </section>
+
+    <section class="details">
+      <h3>Why this result?</h3>
+      <ul id="reasons">
+        <li>Analyzing the current website…</li>
+      </ul>
+    </section>
+
+    <p id="notice" class="notice"></p>
+
+    <footer>
+      <span>Webora Web Protection</span>
+      <span>Local analysis</span>
+    </footer>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>

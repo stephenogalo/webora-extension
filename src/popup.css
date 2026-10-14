@@ -1,0 +1,185 @@
+
+:root {
+  color-scheme: light dark;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  width: 360px;
+  min-height: 400px;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.app {
+  padding: 18px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.brand-mark {
+  display: grid;
+  place-items: center;
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  background: #0f766e;
+  color: white;
+  font-size: 23px;
+  font-weight: 800;
+}
+
+h1 {
+  margin: 0;
+  font-size: 21px;
+  letter-spacing: -0.5px;
+}
+
+.tagline {
+  margin: 2px 0 0;
+  color: #64748b;
+  font-size: 11px;
+}
+
+.status {
+  margin-top: 16px;
+  padding: 16px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: white;
+}
+
+.eyebrow {
+  margin: 0 0 8px;
+  color: #64748b;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h2 {
+  margin: 0 0 6px;
+  font-size: 18px;
+}
+
+.host {
+  margin: 0;
+  overflow-wrap: anywhere;
+  color: #475569;
+  font-size: 12px;
+}
+
+.score-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  font-size: 12px;
+}
+
+.score-row strong {
+  font-size: 15px;
+}
+
+.meter {
+  height: 7px;
+  margin-top: 9px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e2e8f0;
+}
+
+.meter-fill {
+  width: 0;
+  height: 100%;
+  border-radius: inherit;
+  background: #16a34a;
+  transition: width 180ms ease;
+}
+
+.details {
+  margin-top: 18px;
+}
+
+h3 {
+  margin: 0 0 9px;
+  font-size: 13px;
+}
+
+ul {
+  margin: 0;
+  padding-left: 19px;
+  color: #475569;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+li {
+  margin-bottom: 6px;
+  overflow-wrap: anywhere;
+}
+
+.notice {
+  min-height: 16px;
+  margin: 12px 0 0;
+  color: #64748b;
+  font-size: 11px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid #e2e8f0;
+  color: #64748b;
+  font-size: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root,
+  body {
+    background: #0f172a;
+    color: #f1f5f9;
+  }
+
+  .header,
+  footer {
+    border-color: #334155;
+  }
+
+  .status {
+    background: #1e293b;
+    border-color: #334155;
+  }
+
+  .host,
+  ul {
+    color: #cbd5e1;
+  }
+
+  .meter {
+    background: #334155;
+  }
+
+  .tagline,
+  .eyebrow,
+  .notice,
+  footer {
+    color: #94a3b8;
+  }
+}
